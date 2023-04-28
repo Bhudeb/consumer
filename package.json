@@ -4,14 +4,20 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test:consumer": "mocha consumer.spec.js"
+		"test:consumerA": "mocha consumerA.spec.js",
+		"test:consumerB": "mocha consumerB.spec.js",
+		"publishcontractA": "node publisherA.js",
+		"publishcontractB": "node publisherB.js",
+		"testandpublishcontractA": "npm run test:consumerA && npm run publishcontractA",
+		"testandpublishcontractB": "npm run test:consumerB && npm run publishcontractB"
 	},
 	"keywords": [],
 	"type": "module",
 	"author": "",
 	"license": "ISC",
-	"dependencies": {
+	"dependencies": {	
 		"@pact-foundation/pact": "^11.0.2",
+		"@pact-foundation/pact-node": "^10.17.7",
 		"chai": "^4.3.7",
 		"mocha": "^10.2.0"
 	}

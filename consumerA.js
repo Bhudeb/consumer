@@ -1,7 +1,5 @@
 import http from 'http'
-
-
- function fetchItems(url){
+ function fetchItem(url){
     return new Promise((resolve, reject) => {
       http
         .get(`${url}/items/1`, (resp) => {
@@ -10,7 +8,6 @@ import http from 'http'
           resp.on('data', (chunk) => {
             data += chunk
           })
-
           resp.on('end', () => {
             // console.log(data)
             resolve(JSON.parse(data))
@@ -22,4 +19,4 @@ import http from 'http'
         })
     })}
 
-    export default fetchItems;
+    export default fetchItem;

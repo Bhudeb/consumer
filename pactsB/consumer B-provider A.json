@@ -1,0 +1,54 @@
+{
+  "consumer": {
+    "name": "consumer B"
+  },
+  "interactions": [
+    {
+      "description": "a request for all items with the builder pattern",
+      "providerStates": [
+        {
+          "name": "I have a list of items"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/items"
+      },
+      "response": {
+        "body": [
+          {
+            "completed": true,
+            "id": 1,
+            "order": 1,
+            "title": "Create a project"
+          },
+          {
+            "completed": true,
+            "id": 2,
+            "order": 2,
+            "title": "Take a cofféé"
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "11.0.2"
+    },
+    "pactRust": {
+      "ffi": "0.4.0",
+      "models": "1.0.4"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "provider A"
+  }
+}

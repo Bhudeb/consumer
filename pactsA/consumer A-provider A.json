@@ -1,6 +1,6 @@
 {
   "consumer": {
-    "name": "consumer"
+    "name": "consumer A"
   },
   "interactions": [
     {
@@ -17,7 +17,6 @@
       "response": {
         "body": {
           "completed": true,
-          "createdOn": "2023-03-28T11:57:26.220Z",
           "id": 1,
           "order": 1,
           "title": "Create a project"
@@ -42,6 +41,6 @@
     }
   },
   "provider": {
-    "name": "provider"
+    "name": "provider A"
   }
 }
