@@ -1,7 +1,7 @@
 import pact from '@pact-foundation/pact-node';
 
 var opts = {
-	pacticipants: [{'name':"consumer B", "latest":true,'version':'1.0.1'},{'name':"provider B", "latest":true,'version':'1.0.0'}],
+	pacticipants: [{'name':"consumer B", "latest":true,'version':'1.0.1'},{'name':"provider A", "latest":true,'version':'1.0.0'}],
   pactBroker: 'http://115.160.223.122:9292/'
 };
 
