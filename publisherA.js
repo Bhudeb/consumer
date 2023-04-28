@@ -3,7 +3,7 @@ import * as path from 'path';
 
 const opts = {
     pactFilesOrDirs: [path.resolve(process.cwd(), 'pactsA')],
-    pactBroker: 'http://localhost:9292',
+    pactBroker: 'http://192.168.1.237:9292',
     consumerVersion: '1.0.1'
 };
 
