@@ -9,7 +9,8 @@
 		"publishcontractA": "node publisherA.js",
 		"publishcontractB": "node publisherB.js",
 		"testandpublishcontractA": "npm run test:consumerA && npm run publishcontractA",
-		"testandpublishcontractB": "npm run test:consumerB && npm run publishcontractB"
+		"testandpublishcontractB": "npm run test:consumerB && npm run publishcontractB",
+		"canDeploy": "node canDeploy.js"
 	},
 	"keywords": [],
 	"type": "module",
