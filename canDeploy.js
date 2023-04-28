@@ -1,7 +1,7 @@
 import pact from '@pact-foundation/pact-node';
 
 var opts = {
-	pacticipants: [{'name':"consumer B", "latest":true,'version':'1.0.1'},{'name':"provider A", "latest":true,'version':'1.0.0'}],
+	pacticipants: [{'name':"consumer B", "latest":true,'version':'1.0.1'},{'name':"provider B", "latest":true,'version':'1.0.0'}],
   pactBroker: 'http://115.160.223.122:9292/'
 };
 
@@ -13,7 +13,7 @@ pact.canDeploy(opts)
     // console.log(result.matrix[0].provider)
     // console.log('--------------------------------------------------------')
     // console.log(result.matrix[0].pact)
-    // console.log('--------------------------------------------------------')
+    console.log('--------------------------------------------------------')
     // console.log(result.matrix[0].verificationResult)
     
 		// You can deploy this
@@ -21,7 +21,8 @@ pact.canDeploy(opts)
     // If outout is 'table', it is the human readable string returned by the check
 	})
 	.catch(function(error) {
-    console.log(error)
+    console.log('----',error)
+    
 		// You can't deploy this
     // if output is not specified, or is json, error will be an object describing
     // the result of the check (if the check failed),
