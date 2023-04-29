@@ -1,7 +1,7 @@
 import pact from '@pact-foundation/pact-node';
 
 var opts = {
-	pacticipants: [{'name':"consumer B", "latest":true,'version':'1.0.1'},{'name':"provider A", "latest":true,'version':'1.0.0'}],
+	pacticipants: [{'name':"consumer B", "latest":true,'version':'1.0.1'},{'name':"provider B", "latest":true,'version':'1.0.0'}],
   pactBroker: 'http://115.160.223.122:9292/'
 };
 
@@ -22,6 +22,7 @@ pact.canDeploy(opts)
 	})
 	.catch(function(error) {
     console.log('----',error)
+    process.exit(1)
     
 		// You can't deploy this
     // if output is not specified, or is json, error will be an object describing
